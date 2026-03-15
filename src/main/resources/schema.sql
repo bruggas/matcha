@@ -14,7 +14,6 @@ CREATE TABLE IF NOT EXISTS users (
     sexual_preference VARCHAR(20) DEFAULT 'BISEXUAL' CHECK (sexual_preference IN ('HETEROSEXUAL', 'HOMOSEXUAL', 'BISEXUAL')),
 
     birthday TIMESTAMP,
-    phone_number VARCHAR(20),
     bio TEXT,
     rating INTEGER DEFAULT 0,
     last_connection TIMESTAMP,
